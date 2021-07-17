@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #ddd;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    background: #171717;
+    color: white;
+    border: none;
+    transition: all .4s;
+}
+.btn:hover{
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+    0 15px 0 -4px #39a2bd,
+    0 16px 10px -3px #39a2bd;
+}
