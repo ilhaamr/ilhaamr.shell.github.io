@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ddd;
+    margin: 0 50px;
+}
+.navbar{
+    height: 50px;
+    display: flex;
+    background-color: #0C87F2;
+    justify-content:space-around;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    width: 40%;
+    list-style: none;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: .9em;
+}
+.navbar ul li a:hover{
+    color:#eee;
+}
+/* hero */
+.heading{
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+    gap: 10px;
+}
+.hero{
+    grid-area: hero;
+    min-height: 400px;
+    background-color: #666; /*ganti img*/
+    /* background-size: cover; */
+    /* background-position: center; */
+    padding: 20px;
+    border-radius: 4px;
+}
+.features{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.features .price{
+    font-size: 2em;
+}
+.feature-1{
+    grid-area: feature-1;
+    background-color: #666;
+    /* background-size: cover; */
+    border: 4px;
+}
+.feature-2{
+    grid-area: feature-2;
+    background-color: #666;
+    /* background-size: cover; */
+    border: 4px;
+}
+/* Responsive */
+@media screen and (max-width: 576px){
+    .heading{
+        grid-template-areas: 
+        'hero'
+        'feature-1'
+        'feature-2';
+    }
+    body{
+        margin: 0;
+    }
+}

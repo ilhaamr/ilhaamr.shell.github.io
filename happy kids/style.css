@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.judul{
+    text-align: center;
+    padding: 50px;
+}
+h4 {
+    text-align: center;
+    margin-top: 50px;
+}
+.hero {
+    margin-top: 50px;
+}
+.poster{
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 50px;
+}
+.price{
+    margin-top: 10px;
+    text-align: center;
+}
+.shopall{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.card button{
+    border: 1px solid #ddd;
+    margin: 10px;
+    height: 30px;
+    width: 150px;
+    transition: transform .5s;
+}
+.card button:hover{
+    transform: translateY(-10px);
+}
+.shopall button{
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    background: #171717;
+    color: white;
+    border: none;
+    transition: all .4s;
+}
+.shopall button:hover{
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+    0 15px 0 -4px #39a2bd,
+    0 16px 10px -3px #39a2bd;
+}
+/* footer{
+    display: flex;
+} */
+footer .service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.headfooter{
+    text-align: center;
+    margin: 70px;
+    font-size: 2em;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navfooter{
+    text-align:center;
+}
+.navmedsos{
+    font-size: 1.5em;
+    word-spacing: 50px;
+}
+.navservice{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    margin-top: 50px;
+    bottom: 0;
+}
+@media screen and (max-width: 567px) {
+    footer .service{
+        display: flex;
+        flex-direction: column;
+    }
+    .navmedsos{
+        text-align: center;
+        margin: 20px;
+    }
+}
